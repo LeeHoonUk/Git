@@ -26,6 +26,9 @@
  User $ git config --global user.name '사용자 이름'
  User $ git config --global user.email '깃허브 이메일 주소'
  User $ git config --global core.autocrlf true(mac일 경우 input)
+ 
+ # Git 기본 브런치 master에 대한 논란으로 기본 브런치 main으로 지정
+ User $ git config --global init.defaultBranch main
 ```
 
 ## 4. 버전 생성
@@ -56,7 +59,7 @@
  User $ git remote -v
  
  # GitHub 업로드
- User $ git push origin master
+ User $ git push origin main
 ```
 
 ## 6. 브랜치
@@ -113,6 +116,6 @@
  User $ git remote add origin github주소(ex : https://github.com/LeeHoonUk/Git.git)
  
  # 강제로 push
- User $ git push -f origin master
+ User $ git push -f origin main
  
 ```
